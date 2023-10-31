@@ -1,5 +1,8 @@
 package ru.job4j.di;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class StartUI {
     private final Store store;
     private final ConsoleInput consoleInput;
@@ -19,7 +22,7 @@ public class StartUI {
         }
     }
 
-    public String question() {
-        return consoleInput.askStr("Введите Ваш вопрос:" + System.lineSeparator());
+    public void question() {
+        consoleInput.askStr("Введите Ваш вопрос:" + System.lineSeparator());
     }
 }

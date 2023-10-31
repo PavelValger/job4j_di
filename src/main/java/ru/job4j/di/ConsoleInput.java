@@ -1,12 +1,15 @@
 package ru.job4j.di;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Scanner;
 
+@Component
 public class ConsoleInput {
-    private Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner = new Scanner(System.in);
 
-    public String askStr(String question) {
+    public void askStr(String question) {
         System.out.print(question);
-        return scanner.nextLine();
+        scanner.nextLine();
     }
 }
