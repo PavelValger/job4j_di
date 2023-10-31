@@ -1,9 +1,9 @@
-package ru.job4j.di.lifecycle;
+package ru.job4j.lifecycle;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.stereotype.Component;
-import ru.job4j.di.lifecycle.model.Product;
+import ru.job4j.lifecycle.model.Product;
 
 @Component
 public class ProductBeanPostProcessor implements BeanPostProcessor {

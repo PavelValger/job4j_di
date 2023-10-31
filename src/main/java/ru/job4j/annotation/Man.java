@@ -1,8 +1,7 @@
-package ru.job4j.di.annotation;
+package ru.job4j.annotation;
 
 import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

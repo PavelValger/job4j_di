@@ -1,6 +1,4 @@
-package ru.job4j.di.annotation;
-
-import org.springframework.stereotype.Component;
+package ru.job4j.annotation;
 
 public class Dog implements Pet<Dog> {
     private String name = "Dog";
